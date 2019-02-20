@@ -1,8 +1,10 @@
 # Auto fuzzytime trigger for Zabbix Proxy
 
+![com-property-url](https://raw.githubusercontent.com/catonrug/zabbix-proxy-fuzzytime/master/png/fuzzytime-trigger-prototype-zabbix-proxy.png)
+
 This template generates a fuzzytime trigger for all proxies in your instance. The template must be assigned to host "Zabbix server".
 
-Solution is based on Zabbix API. In order to work with API you must setup credentials at first.
+Solution is based on Zabbix API and checking on Zabbix internal items. In order to work with API you must install Python PyZabbix module, setup credentials, and create an external script.
 
 ## Prepare PyZabbix module
 ```
