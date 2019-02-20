@@ -1,6 +1,6 @@
 # Auto fuzzytime trigger for Zabbix Proxy
 
-![com-property-url](https://raw.githubusercontent.com/catonrug/zabbix-proxy-fuzzytime/master/png/fuzzytime-trigger-prototype-zabbix-proxy.png)
+![fuzzytime-trigger-prototype-zabbix-proxy](https://raw.githubusercontent.com/catonrug/zabbix-proxy-fuzzytime/master/img/fuzzytime-trigger-prototype-zabbix-proxy.png)
 
 This template generates a fuzzytime trigger for all proxies in your instance. The template must be assigned to host "Zabbix server".
 
