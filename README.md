@@ -19,7 +19,7 @@ pip -U pyzabbix
 
 ## Setup credentials for Zabbix Python API
 ```
-# check what is a default location home location for user 'zabbix'
+# check what is a default 'home' location for user 'zabbix'
 grep zabbix /etc/passwd
 
 # try to navigate to the dir. it probably do not exist
@@ -28,10 +28,10 @@ cd /var/lib/zabbix
 # if directory do not exist then create it
 mkdir -p /var/lib/zabbix
 
-# owner for the dir is user 'zabbix'
+# owner for the dir must be user 'zabbix'
 chown -R zabbix. /var/lib/zabbix
 
-# enter bash environment under 'zabbix' environment 
+# enter bash environment under user 'zabbix' 
 su - zabbix -s /bin/bash
 
 # make sure you are at home dir
@@ -77,4 +77,7 @@ chmod +x list-all-proxies-json.py
 # it must insatantly show the list of all proxies
 ```
 
-Attach the template to "Zabbix server". The discoery by executes in 1h interval.
+## Install template
+Upload [auto-fuzzytime-trigger-zabbix-proxy.xml](https://raw.githubusercontent.com/catonrug/zabbix-proxy-fuzzytime/master/auto-fuzzytime-trigger-zabbix-proxy.xml) to you Zabbix instance
+
+Link the template to "Zabbix server". The discovery by default executes every 1h.
